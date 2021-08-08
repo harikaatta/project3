@@ -1,0 +1,121 @@
+/* #f4d988 -- yellow
+#fcdb90
+
+#408f70 -- green
+#358469
+#a8caa8
+#90b59b
+#accaa5
+#e3e1d5
+
+
+#b49a8c
+#d9c3a2
+#534352
+#675863
+#4b3f4e */
+
+*{
+  margin: 0;
+  padding: 0;
+  background-color: #fcdb90;
+  font-family: Ink Free,sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+.wrapper{
+  display: inline-flex;
+}
+.wrapper .static_text{
+  font-size: 60px;
+  color: #408f70;
+  font-weight: 400;
+}
+.wrapper .dynamic_text{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  background: red;
+  overflow:   hidden;
+}
+.dynamic_text li{
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic_text li span{
+  position: relative;
+}
+.dynamic_text li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  background: #fcdb90;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #408f70;
+  animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing {
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+/* .headerclass{
+  color: #408f70;
+  font-size: 45px;
+  //font-family: Ink Free;
+  width: 100%;
+  margin: 80px;
+} */
+/* .txt-rotate{
+  padding-right: 18px;
+  background-position: 100% 50%;
+  background-image: url(https://assets.website-files.com/5e6b08d53dfad885beca7a05/5e819b2f9d7551479ccf8317_wave_cursor.svg);
+  background-size: 18px 80px;
+  background-repeat: no-repeat;
+}
+.heading1{
+  margin-bottom: 8px;
+}
+.animated_text_wrapper{
+  position: absolute;
+    left: auto;
+    top: auto;
+    right: 6%;
+    bottom: 0;
+    display: none;
+    overflow: hidden;
+    width: 25%;
+    height: 5.7vw;
+}
+.text_container{
+  position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 5.7vw;
+    padding-bottom: 0;
+    background-image: url(https://assets.website-files.com/5e6b08d…/5e70422…_line-wavy_long.svg);
+    background-position: 50% 100%;
+    background-size: auto;
+    background-repeat: repeat-x;
+}
+.hearo_heading{
+  position: relative;
+    margin-bottom: 32px;
+} */
